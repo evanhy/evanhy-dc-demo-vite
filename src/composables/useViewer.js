@@ -64,7 +64,7 @@ export function createViewer() {
 
   // Provide viewer 给子组件使用
   provide(VIEWER_KEY, {
-    viewer: readonly(viewer),
+    viewer,
     isReady: readonly(isReady),
   })
 

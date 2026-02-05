@@ -78,7 +78,7 @@ src/
 
 ---
 
-## 阶段二：点位加载（Marker）
+## 阶段二：点位加载（Marker） ✅
 
 ### 目标
 实现 Billboard/Label/Point 点位加载，支持批量加载、清除、飞行定位。
@@ -87,10 +87,10 @@ src/
 
 | 文件 | 操作 | 状态 |
 |------|------|------|
-| `src/modules/marker/MarkerManager.js` | 新建 | ⏳ |
-| `src/modules/marker/useMarker.js` | 新建 | ⏳ |
-| `src/components/demos/MarkerDemo.vue` | 新建 | ⏳ |
-| `src/App.vue` | 修改 | ⏳ |
+| `src/modules/marker/MarkerManager.js` | 新建 | ✅ |
+| `src/modules/marker/useMarker.js` | 新建 | ✅ |
+| `src/components/demos/MarkerDemo.vue` | 新建 | ✅ |
+| `src/App.vue` | 修改 | ✅ |
 
 ### 功能点
 - 加载示例点位（20/100 个随机点）
@@ -99,9 +99,9 @@ src/
 - 飞行定位到点位范围
 
 ### 验收标准
-- [ ] 点击按钮后地图显示随机分布的点位
-- [ ] 点位带有名称标签
-- [ ] 清除和飞行定位功能正常
+- [x] 点击按钮后地图显示随机分布的点位
+- [x] 点位带有名称标签
+- [x] 清除和飞行定位功能正常
 
 ---
 

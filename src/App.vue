@@ -2,6 +2,7 @@
 import MapContainer from './map/MapContainer.vue'
 import ControlPanel from './components/ControlPanel.vue'
 import PanelSection from './components/PanelSection.vue'
+import MarkerDemo from './components/demos/MarkerDemo.vue'
 </script>
 
 <template>
@@ -9,7 +10,7 @@ import PanelSection from './components/PanelSection.vue'
     <MapContainer>
       <ControlPanel>
         <PanelSection title="点位加载" icon="📍" :default-expanded="true">
-          <p class="placeholder-text">即将实现...</p>
+          <MarkerDemo />
         </PanelSection>
 
         <PanelSection title="面加载" icon="⬡">
