@@ -43,7 +43,11 @@ export const useViewerStore = defineStore('viewer', () => {
           )
         }
 
+        // 启用坐标信息栏
+        v.locationBar.enable = true
+
         viewer.value = v
+        window.viewer = v
         isReady.value = true
         resolve(v)
       })
