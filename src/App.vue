@@ -2,6 +2,7 @@
 import MapContainer from './map/MapContainer.vue'
 import ControlPanel from './components/ControlPanel.vue'
 import PanelSection from './components/PanelSection.vue'
+import BaseApiDemo from './components/demos/BaseApiDemo.vue'
 import MarkerDemo from './components/demos/MarkerDemo.vue'
 import PolygonDemo from './components/demos/PolygonDemo.vue'
 import WaterDemo from './components/demos/WaterDemo.vue'
@@ -14,7 +15,11 @@ import AnalysisDemo from './components/demos/AnalysisDemo.vue'
   <div class="app">
     <MapContainer>
       <ControlPanel>
-        <PanelSection title="点位加载" icon="📍" :default-expanded="true">
+        <PanelSection title="基础 API" icon="🔧" :default-expanded="true">
+          <BaseApiDemo />
+        </PanelSection>
+
+        <PanelSection title="点位加载" icon="📍">
           <MarkerDemo />
         </PanelSection>
 
