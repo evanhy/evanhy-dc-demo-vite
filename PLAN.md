@@ -157,7 +157,7 @@ src/
 
 ---
 
-## 阶段五：天气特效 + 后处理
+## 阶段五：天气特效 + 后处理 ✅
 
 ### 目标
 实现天气效果（雨/雪/雾/云）和视觉后处理（bloom/夜视等）。
@@ -166,10 +166,10 @@ src/
 
 | 文件 | 操作 | 状态 |
 |------|------|------|
-| `src/modules/effect/EffectManager.js` | 新建 | ⏳ |
-| `src/modules/effect/useEffect.js` | 新建 | ⏳ |
-| `src/components/demos/EffectDemo.vue` | 新建 | ⏳ |
-| `src/App.vue` | 修改 | ⏳ |
+| `src/modules/effect/EffectManager.js` | 新建 | ✅ |
+| `src/modules/effect/useEffect.js` | 新建 | ✅ |
+| `src/components/demos/EffectDemo.vue` | 新建 | ✅ |
+| `src/App.vue` | 修改 | ✅ |
 
 ### 功能点
 - 天气：雨、雪、雾、云（独立开关 + 参数调节）
@@ -177,9 +177,9 @@ src/
 - 扫描效果：圆形扫描、雷达扫描
 
 ### 验收标准
-- [ ] 可独立开启/关闭雨、雪、雾、云效果
-- [ ] Bloom 等后处理效果可控
-- [ ] 圆形扫描和雷达扫描可启动/停止
+- [x] 可独立开启/关闭雨、雪、雾、云效果
+- [x] Bloom 等后处理效果可控
+- [x] 圆形扫描和雷达扫描可启动/停止
 
 ---
 

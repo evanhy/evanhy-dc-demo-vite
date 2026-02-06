@@ -5,6 +5,7 @@ import PanelSection from './components/PanelSection.vue'
 import MarkerDemo from './components/demos/MarkerDemo.vue'
 import PolygonDemo from './components/demos/PolygonDemo.vue'
 import WaterDemo from './components/demos/WaterDemo.vue'
+import EffectDemo from './components/demos/EffectDemo.vue'
 </script>
 
 <template>
@@ -24,7 +25,7 @@ import WaterDemo from './components/demos/WaterDemo.vue'
         </PanelSection>
 
         <PanelSection title="天气特效" icon="🌦️">
-          <p class="placeholder-text">即将实现...</p>
+          <EffectDemo />
         </PanelSection>
 
         <PanelSection title="空间分析" icon="📊">
