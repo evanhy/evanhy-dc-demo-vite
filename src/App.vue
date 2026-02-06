@@ -4,6 +4,7 @@ import ControlPanel from './components/ControlPanel.vue'
 import PanelSection from './components/PanelSection.vue'
 import MarkerDemo from './components/demos/MarkerDemo.vue'
 import PolygonDemo from './components/demos/PolygonDemo.vue'
+import WaterDemo from './components/demos/WaterDemo.vue'
 </script>
 
 <template>
@@ -19,7 +20,7 @@ import PolygonDemo from './components/demos/PolygonDemo.vue'
         </PanelSection>
 
         <PanelSection title="水动力效果" icon="💧">
-          <p class="placeholder-text">即将实现...</p>
+          <WaterDemo />
         </PanelSection>
 
         <PanelSection title="天气特效" icon="🌦️">

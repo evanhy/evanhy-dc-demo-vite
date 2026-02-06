@@ -132,7 +132,7 @@ src/
 
 ---
 
-## 阶段四：水动力效果
+## 阶段四：水动力效果 ✅
 
 ### 目标
 实现 WaterPrimitive 水面效果，支持参数动态调节。
@@ -141,19 +141,19 @@ src/
 
 | 文件 | 操作 | 状态 |
 |------|------|------|
-| `src/modules/effect/WaterManager.js` | 新建 | ⏳ |
-| `src/modules/effect/useWater.js` | 新建 | ⏳ |
-| `src/components/demos/WaterDemo.vue` | 新建 | ⏳ |
-| `src/App.vue` | 修改 | ⏳ |
+| `src/modules/effect/WaterManager.js` | 新建 | ✅ |
+| `src/modules/effect/useWater.js` | 新建 | ✅ |
+| `src/components/demos/WaterDemo.vue` | 新建 | ✅ |
+| `src/App.vue` | 修改 | ✅ |
 
 ### 功能点
 - 加载示例河流/湖面
 - 参数调节：颜色、频率、动画速度、振幅、镜面反射
 
 ### 验收标准
-- [ ] 水面正确渲染，有波纹动画效果
-- [ ] 参数滑块实时影响水面表现
-- [ ] 支持河流型和湖面型两种预设
+- [x] 水面正确渲染，有波纹动画效果
+- [x] 参数滑块实时影响水面表现
+- [x] 支持河流型和湖面型两种预设
 
 ---
 
