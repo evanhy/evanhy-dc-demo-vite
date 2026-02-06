@@ -105,7 +105,7 @@ src/
 
 ---
 
-## 阶段三：面加载（Polygon + Polyline）
+## 阶段三：面加载（Polygon + Polyline） ✅
 
 ### 目标
 实现多边形和折线加载，支持不同样式和材质。
@@ -114,21 +114,21 @@ src/
 
 | 文件 | 操作 | 状态 |
 |------|------|------|
-| `src/modules/polygon/PolygonManager.js` | 新建 | ⏳ |
-| `src/modules/polygon/usePolygon.js` | 新建 | ⏳ |
-| `src/modules/polyline/PolylineManager.js` | 新建 | ⏳ |
-| `src/modules/polyline/usePolyline.js` | 新建 | ⏳ |
-| `src/components/demos/PolygonDemo.vue` | 新建 | ⏳ |
-| `src/App.vue` | 修改 | ⏳ |
+| `src/modules/polygon/PolygonManager.js` | 新建 | ✅ |
+| `src/modules/polygon/usePolygon.js` | 新建 | ✅ |
+| `src/modules/polyline/PolylineManager.js` | 新建 | ✅ |
+| `src/modules/polyline/usePolyline.js` | 新建 | ✅ |
+| `src/components/demos/PolygonDemo.vue` | 新建 | ✅ |
+| `src/App.vue` | 修改 | ✅ |
 
 ### 功能点
-- 多边形：普通填充、拉伸高度、半透明
-- 折线：实线、发光线、箭头线、虚线
+- 多边形：普通填充、拉伸高度、半透明、圆形
+- 折线：实线、发光线、箭头线、虚线、流动线
 
 ### 验收标准
-- [ ] 多边形正确渲染，支持半透明填充和描边
-- [ ] 拉伸多边形有高度效果
-- [ ] 折线支持 4 种材质样式
+- [x] 多边形正确渲染，支持半透明填充和描边
+- [x] 拉伸多边形有高度效果
+- [x] 折线支持 4 种材质样式
 
 ---
 

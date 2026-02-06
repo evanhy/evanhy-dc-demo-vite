@@ -3,6 +3,7 @@ import MapContainer from './map/MapContainer.vue'
 import ControlPanel from './components/ControlPanel.vue'
 import PanelSection from './components/PanelSection.vue'
 import MarkerDemo from './components/demos/MarkerDemo.vue'
+import PolygonDemo from './components/demos/PolygonDemo.vue'
 </script>
 
 <template>
@@ -14,7 +15,7 @@ import MarkerDemo from './components/demos/MarkerDemo.vue'
         </PanelSection>
 
         <PanelSection title="面加载" icon="⬡">
-          <p class="placeholder-text">即将实现...</p>
+          <PolygonDemo />
         </PanelSection>
 
         <PanelSection title="水动力效果" icon="💧">
