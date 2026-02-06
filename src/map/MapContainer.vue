@@ -1,16 +1,18 @@
 <script setup>
 import { onMounted, onUnmounted } from 'vue'
-import { createViewer } from '../composables/useViewer.js'
+import { storeToRefs } from 'pinia'
+import { useViewerStore } from '../stores/viewer.js'
 import { MAP_CONFIG } from '../config/map.js'
 
-const { viewer, isReady, init, destroy } = createViewer()
+const viewerStore = useViewerStore()
+const { isReady } = storeToRefs(viewerStore)
 
 onMounted(async () => {
-  await init('viewer-container', MAP_CONFIG)
+  await viewerStore.init('viewer-container', MAP_CONFIG)
 })
 
 onUnmounted(() => {
-  destroy()
+  viewerStore.destroy()
 })
 </script>
 

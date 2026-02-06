@@ -1,5 +1,6 @@
 import { ref, shallowRef, onUnmounted, watch } from 'vue'
-import { useViewer } from '../../composables/useViewer.js'
+import { storeToRefs } from 'pinia'
+import { useViewerStore } from '../../stores/viewer.js'
 import { MarkerManager } from './MarkerManager.js'
 
 /**
@@ -7,7 +8,8 @@ import { MarkerManager } from './MarkerManager.js'
  * 提供响应式的点位操作
  */
 export function useMarker() {
-  const { viewer, isReady } = useViewer()
+  const viewerStore = useViewerStore()
+  const { viewer, isReady } = storeToRefs(viewerStore)
 
   const manager = shallowRef(null)
   const count = ref(0)

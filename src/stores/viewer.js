@@ -1,14 +1,13 @@
-import { shallowRef, provide, inject, readonly } from 'vue'
-
-const VIEWER_KEY = Symbol('dc-viewer')
+import { defineStore } from 'pinia'
+import { shallowRef, ref } from 'vue'
 
 /**
- * 创建 Viewer 实例（在 MapContainer 中调用）
- * 使用 provide 共享给子组件
+ * Viewer 状态管理 Store
+ * 使用 Pinia 管理地图 Viewer 实例
  */
-export function createViewer() {
+export const useViewerStore = defineStore('viewer', () => {
   const viewer = shallowRef(null)
-  const isReady = shallowRef(false)
+  const isReady = ref(false)
 
   /**
    * 初始化 Viewer
@@ -62,22 +61,10 @@ export function createViewer() {
     }
   }
 
-  // Provide viewer 给子组件使用
-  provide(VIEWER_KEY, {
+  return {
     viewer,
-    isReady: readonly(isReady),
-  })
-
-  return { viewer, isReady, init, destroy }
-}
-
-/**
- * 获取 Viewer 实例（在子组件/composable 中调用）
- */
-export function useViewer() {
-  const ctx = inject(VIEWER_KEY)
-  if (!ctx) {
-    throw new Error('useViewer must be used within MapContainer')
+    isReady,
+    init,
+    destroy,
   }
-  return ctx
-}
+})
