@@ -183,7 +183,7 @@ src/
 
 ---
 
-## 阶段六：地形 + 分析功能
+## 阶段六：地形 + 分析功能 ✅
 
 ### 目标
 加载地形数据，实现视域分析、阴影分析、通视分析等。
@@ -192,22 +192,24 @@ src/
 
 | 文件 | 操作 | 状态 |
 |------|------|------|
-| `src/modules/terrain/TerrainManager.js` | 新建 | ⏳ |
-| `src/modules/terrain/useTerrain.js` | 新建 | ⏳ |
-| `src/modules/analysis/AnalysisManager.js` | 新建 | ⏳ |
-| `src/modules/analysis/useAnalysis.js` | 新建 | ⏳ |
-| `src/components/demos/AnalysisDemo.vue` | 新建 | ⏳ |
-| `src/App.vue` | 修改 | ⏳ |
+| `src/modules/terrain/TerrainManager.js` | 新建 | ✅ |
+| `src/modules/terrain/useTerrain.js` | 新建 | ✅ |
+| `src/modules/analysis/AnalysisManager.js` | 新建 | ✅ |
+| `src/modules/analysis/useAnalysis.js` | 新建 | ✅ |
+| `src/components/demos/TerrainDemo.vue` | 新建 | ✅ |
+| `src/components/demos/AnalysisDemo.vue` | 新建 | ✅ |
+| `src/App.vue` | 修改 | ✅ |
 
 ### 功能点
-- 地形：椭球/URL/Google 地形切换
+- 地形：椭球/Cesium/ArcGIS/自定义URL 地形切换
+- 地形设置：夸张系数、深度测试、地形光照
 - 分析：可视域、通视线、通视圆、日照阴影
 - 裁剪：地球裁剪、地形裁剪
 
 ### 验收标准
-- [ ] 地形正确加载
-- [ ] 各分析功能可正常运行并显示结果
-- [ ] 裁剪功能正常
+- [x] 地形正确加载
+- [x] 各分析功能可正常运行并显示结果
+- [x] 裁剪功能正常
 
 ---
 

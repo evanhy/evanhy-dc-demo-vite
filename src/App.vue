@@ -6,6 +6,8 @@ import MarkerDemo from './components/demos/MarkerDemo.vue'
 import PolygonDemo from './components/demos/PolygonDemo.vue'
 import WaterDemo from './components/demos/WaterDemo.vue'
 import EffectDemo from './components/demos/EffectDemo.vue'
+import TerrainDemo from './components/demos/TerrainDemo.vue'
+import AnalysisDemo from './components/demos/AnalysisDemo.vue'
 </script>
 
 <template>
@@ -28,8 +30,12 @@ import EffectDemo from './components/demos/EffectDemo.vue'
           <EffectDemo />
         </PanelSection>
 
+        <PanelSection title="地形控制" icon="🏔️">
+          <TerrainDemo />
+        </PanelSection>
+
         <PanelSection title="空间分析" icon="📊">
-          <p class="placeholder-text">即将实现...</p>
+          <AnalysisDemo />
         </PanelSection>
       </ControlPanel>
     </MapContainer>
@@ -40,11 +46,5 @@ import EffectDemo from './components/demos/EffectDemo.vue'
 .app {
   width: 100%;
   height: 100%;
-}
-
-.placeholder-text {
-  color: rgba(255, 255, 255, 0.5);
-  font-size: 13px;
-  margin: 0;
 }
 </style>
